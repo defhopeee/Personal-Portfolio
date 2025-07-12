@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Nyambura | Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --accent: #e74c3c;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark);
+            font-size: 2rem;
+        }
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .resume-item h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .resume-item ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+        .resume-item li {
+            margin-bottom: 8px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        .project-tech {
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+        .challenge {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .challenge h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        .challenge-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .contact-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-link:hover {
+            background-color: var(--dark);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .resume-grid, .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile_picture.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Hope Nyambura</h1>
+            <p class="tagline">Web Developer | Cybersecurity Specialist | Problem Solver</p>
+            <p class="intro">I'm a passionate technology professional with expertise in web development, cybersecurity, and creating innovative solutions. I enjoy tackling complex problems and building systems that make a real-world impact.</p>
+        </div>
+    </header>
+
+    <section id="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+            <div class="resume-grid">
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>Diploma in Computer Science</strong></li>
+                        <li><strong>High School</strong></li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Work Experience</h3>
+                    <ul>
+                        <li><strong>Web Developer</strong> - Freelancing (2024-Present)</li>
+                        <li><strong>Cybersecurity Intern</strong> - Tech Solutions Ltd (2023)</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Certified in Ethical Hacking</li>
+                        <li>Web Development Certification</li>
+                        <li>Cybersecurity Fundamentals</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Cybersecurity</span>
+                        <span class="skill">GitHub</span>
+                        <span class="skill">Penetration Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="picture.jpeg" alt="Jambo Shoe Website" class="project-img">
+                    <div class="project-content">
+                        <h3>Jambo Shoe E-Commerce Platform</h3>
+                        <span class="project-tech">HTML, CSS, JavaScript, PHP, MySQL</span>
+                        <p>Developed a full-featured e-commerce website for a shoe retailer with product catalog, shopping cart, and secure checkout system. Implemented responsive design for optimal viewing on all devices and integrated payment gateway for seamless transactions.</p>
+                        <p><strong>Key Features:</strong> User authentication, product search/filter, order tracking, admin dashboard</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="background.jpeg" alt="Drug Anti-Counterfeit System" class="project-img">
+                    <div class="project-content">
+                        <h3>Drug Anti-Counterfeit Management System</h3>
+                        <span class="project-tech">Python, Blockchain, QR Codes, MySQL</span>
+                        <p>Created a solution to combat counterfeit pharmaceuticals by implementing a blockchain-based verification system. Each drug package gets a unique QR code that patients can scan to verify authenticity through the decentralized ledger.</p>
+                        <p><strong>Key Features:</strong> QR code generation/scanning, blockchain verification, manufacturer portal, mobile app integration</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="network.jpeg" alt="Security Scanner" class="project-img">
+                    <div class="project-content">
+                        <h3>Network Vulnerability Scanner</h3>
+                        <span class="project-tech">Python, Nmap, Bash, Flask</span>
+                        <p>Built an automated tool to scan networks for vulnerabilities and generate comprehensive security reports with remediation recommendations. Includes web interface for easy management and scheduling of scans.</p>
+                        <p><strong>Key Features:</strong> Port scanning, vulnerability detection, report generation, web dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="challenges">
+        <div class="container">
+            <h2>Lab Challenges</h2>
+            <div class="challenge">
+                <h3>SQL Injection Challenge</h3>
+                <p><strong>Problem Statement:</strong> Bypass authentication on a vulnerable web application using SQL injection techniques.</p>
+                <p><strong>Approach:</strong> Identified vulnerable input fields, tested with basic SQL injection payloads (' OR '1'='1), then refined to extract database information through UNION-based attacks.</p>
+                <p><strong>Tools Used:</strong> Burp Suite, SQLmap, custom Python scripts</p>
+                <p><strong>Key Lessons:</strong> Importance of input validation, parameterized queries, and defense in depth for web applications. Learned how to properly sanitize user inputs in my own projects.</p>
+            </div>
+            <div class="challenge">
+                <h3>Reverse Engineering Challenge</h3>
+                <p><strong>Problem Statement:</strong> Analyze a binary executable to find and exploit a buffer overflow vulnerability.</p>
+                <p><strong>Approach:</strong> Used Ghidra for static analysis to identify vulnerable functions, GDB for dynamic analysis to understand memory layout, and developed a custom Python exploit to gain shell access.</p>
+                <p><strong>Tools Used:</strong> Ghidra, GDB, Python exploit development, pwntools</p>
+                <p><strong>Key Lessons:</strong> Memory management concepts, exploit mitigation techniques (ASLR, NX), and secure coding practices to prevent buffer overflows. This experience directly improved my secure coding practices.</p>
+            </div>
+            <div class="challenge">
+                <h3>Web Application Firewall Bypass</h3>
+                <p><strong>Problem Statement:</strong> Bypass a web application firewall (WAF) to execute a successful XSS attack.</p>
+                <p><strong>Approach:</strong> Analyzed WAF filtering rules, tested various encoding techniques (HTML entities, URL encoding, Unicode), and ultimately used a combination of case variation and alternative event handlers to bypass protections.</p>
+                <p><strong>Tools Used:</strong> Burp Suite, OWASP ZAP, custom JavaScript payloads</p>
+                <p><strong>Key Lessons:</strong> Defense in depth is crucial, as single security controls can often be bypassed. Learned to implement multiple layers of XSS protection in my own web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">
+                I'm always interested in hearing about new opportunities, collaborations, or just chatting about technology. Feel free to reach out!
+            </p>
+            <div class="contact-links">
+                <a href="mailto:defhopeee@gmail.com" class="contact-link">Email Me</a>
+                <a href="https://www.linkedin.com/in/hope-nyambura-787a2b367/" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/defhopeee" target="_blank" class="contact-link">GitHub</a>
+                <a href="tel:+254759406771" class="contact-link">Call Me</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hope Nyambura. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
